@@ -1,0 +1,11 @@
+C:\projet-c#\banque-simple\bin\Debug\netcoreapp3.0\banque-simple.exe
+C:\projet-c#\banque-simple\bin\Debug\netcoreapp3.0\banque-simple.deps.json
+C:\projet-c#\banque-simple\bin\Debug\netcoreapp3.0\banque-simple.runtimeconfig.json
+C:\projet-c#\banque-simple\bin\Debug\netcoreapp3.0\banque-simple.runtimeconfig.dev.json
+C:\projet-c#\banque-simple\bin\Debug\netcoreapp3.0\banque-simple.dll
+C:\projet-c#\banque-simple\bin\Debug\netcoreapp3.0\banque-simple.pdb
+C:\projet-c#\banque-simple\obj\Debug\netcoreapp3.0\banque-simple.csprojAssemblyReference.cache
+C:\projet-c#\banque-simple\obj\Debug\netcoreapp3.0\banque-simple.AssemblyInfoInputs.cache
+C:\projet-c#\banque-simple\obj\Debug\netcoreapp3.0\banque-simple.AssemblyInfo.cs
+C:\projet-c#\banque-simple\obj\Debug\netcoreapp3.0\banque-simple.dll
+C:\projet-c#\banque-simple\obj\Debug\netcoreapp3.0\banque-simple.pdb
