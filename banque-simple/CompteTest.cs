@@ -9,11 +9,13 @@ namespace banque
         Compte compteAtester;
         int initNumCompteATester = 0;
         int setNumCompteATester = 1;
+        double initSoldeATester = 120.99;
+        string initReferenceATester = "Ref";
 
         //Prévoir la création de l'objet avant chaque test
         [SetUp]
         public void Setup() {
-            this.compteAtester = new Compte(initNumCompteATester,120.99,"ref");
+            this.compteAtester = new Compte(initNumCompteATester, initSoldeATester, initReferenceATester);
         }
 
         //Cleanup après chaque test
@@ -34,14 +36,14 @@ namespace banque
             Assert.IsTrue(true);
         }
 
-        //Test de la méthode getnuméro
+        //Test de la méthode getNumero
         [Test]
         public void testGetNumero() {
             int numTest = this.compteAtester.getNumero();
             Assert.AreEqual(initNumCompteATester,numTest);
         }
 
-        //Test de la méthode setnuméro
+        //Test de la méthode setNumero
         [Test]
         public void testsetNumero() {
             this.compteAtester.setNumero(setNumCompteATester);
