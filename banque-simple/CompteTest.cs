@@ -5,8 +5,13 @@ namespace banque
     [TestFixture]
     class CompteTest {
         [Test]
-        public void testFake() {
+        public void testFalse() {
             Assert.IsFalse(false);
+        }
+
+        [Test]
+        public void testTrue() {
+            Assert.IsTrue(true);
         }
 
     }

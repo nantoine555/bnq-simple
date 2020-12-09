@@ -360,12 +360,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-banque-simple/bin/Debug/netcoreapp3.0/banque-simple.dll
-banque-simple/bin/Debug/netcoreapp3.0/banque-simple.pdb
-banque-simple/obj/Debug/netcoreapp3.0/banque-simple.dll
-banque-simple/obj/Debug/netcoreapp3.0/banque-simple.pdb
-banque-simple/bin/Debug/netcoreapp3.0/banque-simple.dll
-banque-simple/bin/Debug/netcoreapp3.0/banque-simple.pdb
-banque-simple/obj/Debug/netcoreapp3.0/banque-simple.dll
-banque-simple/obj/Debug/netcoreapp3.0/banque-simple.pdb
-banque-simple/obj/Debug/netcoreapp3.0/banque-simple.assets.cache
+/banque-simple/bin/
+/banque-simple/obj/
