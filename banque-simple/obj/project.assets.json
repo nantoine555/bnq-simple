@@ -4667,7 +4667,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "Microsoft.Net.test.Sdk >= 16.8.3",
-      "Nunit",
+      "Nunit >= 3.12.0",
       "Nunit3TestAdapter >= 3.17.0"
     ]
   },
@@ -4714,7 +4714,7 @@
           },
           "Nunit": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[3.12.0, )"
           },
           "Nunit3TestAdapter": {
             "target": "Package",
