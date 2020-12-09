@@ -10,7 +10,9 @@ namespace banque
         int initNumCompteATester = 0;
         int setNumCompteATester = 1;
         double initSoldeATester = 120.99;
+        double setSolderATester = 121.98;
         string initReferenceATester = "Ref";
+        string setReferenceATester = "RefNew";
 
         //Prévoir la création de l'objet avant chaque test
         [SetUp]
@@ -50,6 +52,34 @@ namespace banque
             //this.compteAtester.setNumero(24);
             int numTest = this.compteAtester.getNumero();
             Assert.AreEqual(setNumCompteATester,numTest);
+        }
+
+        [Test]
+        public void testGetSolde(){
+            double soldeTest = this.compteAtester.getSolde();
+            Assert.AreEqual(initSoldeATester, soldeTest);
+        }
+
+        [Test]
+        public void testSetSolde(){
+            this.compteAtester.setSolde(setSolderATester);
+            double soldeTest = this.compteAtester.getSolde();
+            Assert.AreEqual(setSolderATester, soldeTest);
+
+        }
+
+        [Test]
+        public void testGetReference(){
+            string refTest = this.compteAtester.getReferenceClient();
+            Assert.AreEqual(initReferenceATester, refTest);
+        }
+
+        [Test]
+        public void testSetReference(){
+            this.compteAtester.setReferenceClient(setReferenceATester);
+            string refTest = this.compteAtester.getReferenceClient();
+            Assert.AreEqual(setReferenceATester, refTest);
+
         }
 
     }
