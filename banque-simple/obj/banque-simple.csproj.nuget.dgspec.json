@@ -37,6 +37,20 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.Net.test.Sdk": {
+              "target": "Package",
+              "version": "[16.8.3, )"
+            },
+            "Nunit": {
+              "target": "Package",
+              "version": "(, )"
+            },
+            "Nunit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
