@@ -7,10 +7,10 @@ namespace banque
 
         //L'objet référence sur lesquels on va réaliser les tests
         Compte compteAtester;
-        int initNumCompteATester = 0;
-        int setNumCompteATester = 1;
-        double initSoldeATester = 120.99;
-        double setSolderATester = 121.98;
+        int initNumCompteATester = 100;
+        int setNumCompteATester = 222;
+        double initSoldeATester = 1200.99;
+        double setSolderATester = 2210.58;
         string initReferenceATester = "Ref";
         string setReferenceATester = "RefNew";
 
