@@ -364,3 +364,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /banque-simple/bin/
 /banque-simple/obj/
+banque-simple-prof/.vscode/launch.json
+banque-simple-prof/.vscode/tasks.json

@@ -41,43 +41,43 @@ namespace banque
         //Test de la méthode getNumero
         [Test]
         public void testGetNumero() {
-            int numTest = this.compteAtester.getNumero();
+            int numTest = this.compteAtester.Numero;
             Assert.AreEqual(initNumCompteATester,numTest);
         }
 
         //Test de la méthode setNumero
         [Test]
         public void testsetNumero() {
-            this.compteAtester.setNumero(setNumCompteATester);
+            this.compteAtester.Numero = setNumCompteATester;
             //this.compteAtester.setNumero(24);
-            int numTest = this.compteAtester.getNumero();
+            int numTest = this.compteAtester.Numero;
             Assert.AreEqual(setNumCompteATester,numTest);
         }
 
         [Test]
         public void testGetSolde(){
-            double soldeTest = this.compteAtester.getSolde();
+            double soldeTest = this.compteAtester.Solde;
             Assert.AreEqual(initSoldeATester, soldeTest);
         }
 
         [Test]
         public void testSetSolde(){
-            this.compteAtester.setSolde(setSolderATester);
-            double soldeTest = this.compteAtester.getSolde();
+            this.compteAtester.Solde = setSolderATester;
+            double soldeTest = this.compteAtester.Solde;
             Assert.AreEqual(setSolderATester, soldeTest);
 
         }
 
         [Test]
         public void testGetReference(){
-            string refTest = this.compteAtester.getReferenceClient();
+            string refTest = this.compteAtester.Referenceclient;
             Assert.AreEqual(initReferenceATester, refTest);
         }
 
         [Test]
         public void testSetReference(){
-            this.compteAtester.setReferenceClient(setReferenceATester);
-            string refTest = this.compteAtester.getReferenceClient();
+            this.compteAtester.Referenceclient = setReferenceATester;
+            string refTest = this.compteAtester.Referenceclient;
             Assert.AreEqual(setReferenceATester, refTest);
 
         }
