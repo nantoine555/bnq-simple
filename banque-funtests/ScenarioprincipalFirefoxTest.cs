@@ -16,7 +16,7 @@ namespace banqueFunTest
 {
 
     [TestFixture]
-    public class ScenarioprincipalTest
+    public class ScenarioprincipalFirefoxTest
     {
         private IWebDriver driver;
         public IDictionary<string, object> vars { get; private set; }
