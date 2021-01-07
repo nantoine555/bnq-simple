@@ -1,6 +1,7 @@
 using NUnit.Framework;
+using banque;
 
-namespace banque
+namespace banqueFunTest
 {
     [TestFixture]
     class CompteTest {
