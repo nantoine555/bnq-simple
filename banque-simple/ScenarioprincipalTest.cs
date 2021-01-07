@@ -13,25 +13,44 @@ using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
 [TestFixture]
 public class ScenarioprincipalTest {
-  private IWebDriver driver;
-  public IDictionary<string, object> vars {get; private set;}
-  private IJavaScriptExecutor js;
-  [SetUp]
+  private IWebDriver ffDriver;
+  private IWebDriver chromeDriver;
+  
+  //public IDictionary<string, object> vars {get; private set;}
+  //private IJavaScriptExecutor ffJs;
+  //private IJavaScriptExecutor chromeJs;
+
+
+  //[SetUp]
   public void SetUp() {
-    driver = new FirefoxDriver();
-    //driver = new ChromeDriver();
-    js = (IJavaScriptExecutor)driver;
-    vars = new Dictionary<string, object>();
+    ffDriver = new FirefoxDriver();
+    chromeDriver = new ChromeDriver();
+    //ffJs = (IJavaScriptExecutor)ffDriver;
+    //chromeJs = (IJavaScriptExecutor)chromeDriver;
+    //vars = new Dictionary<string, object>();
   }
-  [TearDown]
+  //[TearDown]
   protected void TearDown() {
-    driver.Quit();
+
+    if (ffDriver != null)
+      ffDriver.Quit();
+    if (chromeDriver != null)
+      chromeDriver.Quit();
   }
+
   [Test]
-  public void scenarioprincipal() {
+  [TestCase("chrome")]
+  [TestCase("firefox")]
+  public void scenarioprincipal(String browser) {
+
     // Test name: Scénario principal
     // Step # | name | target | value
     // 1 | open | / | 
+
+    IWebDriver driver = null;
+    if(browser=="chrome") driver = new ChromeDriver();
+    if(browser=="firefox") driver = new FirefoxDriver();
+
     driver.Navigate().GoToUrl("http://localhost/");
     // 2 | setWindowSize | 1212x716 | 
     driver.Manage().Window.Size = new System.Drawing.Size(1212, 716);
@@ -52,5 +71,8 @@ public class ScenarioprincipalTest {
     driver.FindElement(By.LinkText("Nous Contacter")).Click();
     // 9 | verifyText | css=h3 | Nous contacter
     Assert.That(driver.FindElement(By.CssSelector("h3")).Text, Is.EqualTo("Nous contacter"));
+
+    driver.Quit();
+
   }
 }
