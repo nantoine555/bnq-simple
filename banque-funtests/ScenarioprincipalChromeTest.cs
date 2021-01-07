@@ -42,7 +42,7 @@ namespace banqueFunTest
             // 1 | open | / | 
             driver.Navigate().GoToUrl("http://localhost/");
             // 2 | setWindowSize | 1212x716 | 
-            driver.Manage().Window.Size = new System.Drawing.Size(1212, 716);
+            //driver.Manage().Window.Size = new System.Drawing.Size(1212, 716);
             // 3 | verifyText | css=h2 | Bienvenue sur votre Banque en ligne !!!
             Assert.That(driver.FindElement(By.CssSelector("h2")).Text, Is.EqualTo("Bienvenue sur votre Banque en ligne !!!"));
             // 4 | click | linkText=Accès client | 
