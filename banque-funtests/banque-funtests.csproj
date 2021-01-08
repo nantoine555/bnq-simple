@@ -13,6 +13,7 @@
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
     <PackageReference Include="Moq" Version="4.15.2" />
     <ProjectReference Include = "..\banque-simple\banque-simple.csproj" />
+    <PackageReference Include="NunitXml.TestLogger" Version="2.1.80" />
   </ItemGroup>
 
 </Project>
