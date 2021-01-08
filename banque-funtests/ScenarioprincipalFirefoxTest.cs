@@ -35,7 +35,7 @@ namespace banqueFunTest
             driver.Quit();
         }
         [Test]
-        public void scenarioprincipal()
+        public void scenarioprincipalFirefox()
         {
             // Test name: Scénario principal
             // Step # | name | target | value
