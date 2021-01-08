@@ -45,7 +45,7 @@ namespace banqueFunTest
         }
 
         [Test]
-        public void testNotNull() {
+        public void testNotNull() { 
             Assert.IsNotNull("AZE");
         }
 
