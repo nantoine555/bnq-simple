@@ -39,6 +39,12 @@ namespace banqueFunTest
             Assert.IsTrue(true);
         }
 
+        
+        [Test]
+        public void testNull() {
+            Assert.IsNull(null);
+        }
+
         //Test de la méthode getNumero
         [Test]
         public void testGetNumero() {
