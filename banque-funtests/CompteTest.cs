@@ -54,7 +54,7 @@ namespace banqueFunTest
         [Test]
         public void testGetNumero() {
             int numTest = this.compteAtester.Numero;
-            Assert.AreEqual(initNumCompteATester,numTest);
+            Assert.AreEqual(initNumCompteATester+"zzz",numTest);
         }
 
         //Test de la méthode setNumero
